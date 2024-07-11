@@ -1,0 +1,60 @@
+{
+  "name": "vue-smooth-scrollbar-ts",
+  "public": true,
+  "author": "sayid.ibragimov",
+  "license": "MIT",
+  "version": "1.0.2",
+  "type": "module",
+  "files": [
+    "dist",
+    "lib",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "main": "./dist/vue-smooth-scrollbar-ts.umd.cjs",
+  "module": "./dist/vue-smooth-scrollbar-ts.js",
+  "types": "./dist/vue-smooth-scrollbar-ts.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-smooth-scrollbar-ts.js",
+      "require": "./dist/vue-smooth-scrollbar-ts.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build && npm run types && npm run rename-types",
+    "postbuild": "rimraf dist/demo.webp dist/vite.svg",
+    "preview": "vite preview",
+    "types": "vue-tsc lib/main.ts --declaration --allowJs --checkJs --emitDeclarationOnly --skipLibCheck --rootDir . --outFile dist/vue-smooth-scrollbar-ts.d.ts",
+    "rename-types": "node scripts/rename-module.js"
+  },
+  "dependencies": {
+    "smooth-scrollbar": "^8.8.4",
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vue-tsc": "^2.0.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siibragimov/vue-smooth-scrollbar-ts.git"
+  },
+  "homepage": "https://github.com/siibragimov/vue-smooth-scrollbar-ts#readme",
+  "bugs": {
+    "url": "https://github.com/siibragimov/vue-smooth-scrollbar-ts/issues"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "nuxt3",
+    "typescript",
+    "smooth-scrollbar"
+  ]
+}
