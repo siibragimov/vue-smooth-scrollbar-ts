@@ -1,6 +1,10 @@
 # Vue 3 and Nuxt 3 smooth scrollbar component
 
-Add your styled scrollbar to any block, which will look consistent across all platforms. To see how it works, plaese, see the demo.
+Add your styled scrollbar to any block, which will look consistent across all platforms. To see how it works, please, see the demo.
+
+[![npm version](https://badge.fury.io/js/vue-smooth-scrollbar-ts.svg)](https://badge.fury.io/js/vue-smooth-scrollbar-ts)
+[![Github Package](https://github.com/siibragimov/vue-smooth-scrollbar-ts/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/siibragimov/vue-smooth-scrollbar-ts/actions/workflows/npm-publish-github-packages.yml)
+[![Node.js Package](https://github.com/siibragimov/vue-smooth-scrollbar-ts/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/siibragimov/vue-smooth-scrollbar-ts/actions/workflows/npm-publish.yml)
 
 Based on [https://idiotwu.github.io/smooth-scrollbar/](https://idiotwu.github.io/smooth-scrollbar/).
 
@@ -11,7 +15,7 @@ There are two examples in the demo. One of them with custom styles.
 ## Installation and setup
 
 ### 1. Install component:
-If you want to install package from __npmjs registry__ use:
+If you want to install package from __npmjs registry__(recommended) use:
 ```shell
 npm i vue-smooth-scrollbar-ts
 ```
@@ -29,7 +33,7 @@ If you want to install package from __GitHub packages__ use:
 ```shell
 npm install @siibragimov/vue-smooth-scrollbar-ts
 ```
-**Note**: Don't forget to configure registry. Use __.npmrc__ file or use command:
+**Note**: Don't forget to configure registry for installing packages from GitHub. Use __.npmrc__ file or use command:
 ```shell
 npm config set registry https://npm.pkg.github.com/
 ```
@@ -51,9 +55,15 @@ For Nuxt 3:
 
 ### 3. Define overriding styles for scrollbars if needed. See the [`App.vue`](/src/App.vue).
 
-**Note**: to make component work properly add height or width styling properties explicitly for the parent block of component. It behaviour is very close to the scroll when you use `overflow: scroll`. For more info checkout the [page](https://github.com/idiotWu/smooth-scrollbar/tree/develop/docs#common-mistakes).
+**Note**: to make component work properly add height or width styling properties explicitly for the parent block of component. It behaviour is very close to the scroll when you use `overflow: scroll`. For more info checkout [this page](https://github.com/idiotWu/smooth-scrollbar/tree/develop/docs#common-mistakes).
 
-### 4. Wrap content you want to be scrolled.
+
+### 4. Import component in your code:
+```javascript
+import { VueSmoothScrollbarTs } from 'vue-smooth-scrollbar-ts'
+```
+
+### 5. Wrap content you want to be scrolled.
 
 Example:
 ```javascript

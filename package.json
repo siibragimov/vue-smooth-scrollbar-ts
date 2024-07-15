@@ -3,7 +3,7 @@
   "public": true,
   "author": "sayid.ibragimov",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "files": [
     "dist",
@@ -58,6 +58,17 @@
     "vue3",
     "nuxt3",
     "typescript",
-    "smooth-scrollbar"
+    "smooth-scrollbar",
+    "smooth-scrolling",
+    "custom-scrollbar",
+    "scrollbar",
+    "scroll",
+    "scroll-style",
+    "scrollbar-style",
+    "smoothscroll",
+    "mac-scroll",
+    "macos-scroll",
+    "mac",
+    "macos"
   ]
 }
