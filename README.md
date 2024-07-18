@@ -5,6 +5,7 @@ Add your styled scrollbar to any block, which will look consistent across all pl
 [![npm version](https://badge.fury.io/js/vue-smooth-scrollbar-ts.svg)](https://badge.fury.io/js/vue-smooth-scrollbar-ts)
 [![Github Package](https://github.com/siibragimov/vue-smooth-scrollbar-ts/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/siibragimov/vue-smooth-scrollbar-ts/actions/workflows/npm-publish-github-packages.yml)
 [![Node.js Package](https://github.com/siibragimov/vue-smooth-scrollbar-ts/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/siibragimov/vue-smooth-scrollbar-ts/actions/workflows/npm-publish.yml)
+[![Bundle size](https://badgen.net/bundlephobia/minzip/vue-smooth-scrollbar-ts)](https://bundlephobia.com/package/vue-smooth-scrollbar-ts)
 
 Based on [https://idiotwu.github.io/smooth-scrollbar/](https://idiotwu.github.io/smooth-scrollbar/).
 
